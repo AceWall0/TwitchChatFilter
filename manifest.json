@@ -1,0 +1,40 @@
+{
+    "name": "Twitch Chat Filter",
+    "version": "1.0",
+    "description": "Removes unwanted message, emotes and users from Twitch's chat.",
+    "manifest_version": 2,
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+            {
+                "matches": ["https://www.twitch.tv/*"],
+                "run_at": "document_end",
+                "js": ["contentScript.js"],
+                "css": ["content.css"]
+            }
+        ],
+    "browser_action": {
+        "default_popup":"popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

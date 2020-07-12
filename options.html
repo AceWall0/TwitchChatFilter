@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="options.css">
+    <script src="options.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="optionsDiv">
+            <label for="stripWS" title="Removes white space from the end and beggining of the words">Remove trailing white spaces </label>
+            <input type="checkbox" id="stripWS">
+            <label for="wholeWord" title="Prevents filters like 'rat' to hide words like 'crate'.">Match whole word </label>
+            <input type="checkbox" id="wholeWord">
+            <label for="ignoreCase" title="Converts everything to small case">Ignore case</label>
+            <input type="checkbox" id="ignoreCase">
+        </div>
+        <hr>
+        <h3>Enjoying your new clean chat? Consider to donate =)</h3>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="NGJR9W8MUZ6JY" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit"
+                title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </main>
+</body>
+
+</html>

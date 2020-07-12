@@ -1,0 +1,56 @@
+body, main, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    background-color: gainsboro;
+    margin: 0;
+}
+
+main {
+    width: max-content;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em 2em 2em 2em;
+    width: 20em;
+    margin-top: 4em;
+    box-shadow: #0003 0px 2px 4px;
+}
+
+.optionsDiv {
+    display: grid;
+    grid-template-columns: 16em 1em;
+    gap: 1em 0;
+    margin-bottom: 1em;
+    padding: 0.5em 1.3em;
+    background-color: rgb(231, 231, 231);
+    border-radius: 1em 1em 0 0;
+    font-weight: 600;
+}
+
+.optionsDiv label {
+    position: relative;
+}
+
+.optionsDiv label::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5em;
+    left: -1.3em;
+    width: 19.6em;
+    height: 1px;
+    background-color: hsla(0, 0%, 80%);
+}
+
+hr {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+}

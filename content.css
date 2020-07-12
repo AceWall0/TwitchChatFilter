@@ -1,0 +1,7 @@
+:root {
+    --msgDisplay: initial;
+}
+
+.hiddenMessage {
+    display: var(--msgDisplay);
+}
